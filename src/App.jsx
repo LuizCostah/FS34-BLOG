@@ -1,37 +1,29 @@
-
-
-function Header({children}) {
-  return (
-    
-    <header className="bg-white-500">
-      <nav className="mx-auto flex items-center p-6 shadow-md">
-        {children}       
-      </nav>
-    </header>
-  )
-}
-
-function HeaderLink({href,children}) {
-  return (
-
-    <a href={href} classeName="font-semibold leading-6 text-black" >{children}</a>
-  )
-  
-}
-
+import Header from "./components/Header"
+import FormBase from "./components/FormBase"
+import { Search } from "lucide-react"
+import PostHeader from "./components/PostHeader"
+import { Children } from "react"
+import PostContent from "./components/PostContent"
 
 
 
 function App() {
 
   return (
-    <>        
-      <Header>
-        <HeaderLink href="#">Company</HeaderLink>
-        <HeaderLink href="#">MarketPlace</HeaderLink>
-      </Header> 
-           
-    </>   
+    <>
+    <Header className="bg-black flex py-3 px-10 shadow-sm shadow-black">
+      <h2 className="text-white text-2xl font-semibold">FS34 Blog</h2>
+      <FormBase className="text-center flex">
+        <input type="text" className="ml-5 mt-1 w-96 h-8 rounded-xl outline-none text-center border shadow-black shadow"/>
+        <Search size={28} absoluteStrokeWidth className="text-white mt-1 cursor-pointer ml-1"/>
+      </FormBase>      
+    </Header>    
+    <PostHeader />
+    <PostContent />
+      
+    
+    
+    </>
   )
 }
 
