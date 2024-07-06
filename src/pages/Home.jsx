@@ -1,11 +1,11 @@
-import Header from "./components/Header"
-import FormBase from "./components/FormBase"
+import Header from "./../components/Header"
+import FormBase from "./../components/FormBase"
 import { Search } from "lucide-react"
-import PostHeader from "./components/PostHeader"
-import PostContent from "./components/PostContent"
-import Tag from "./components/Tag"
-import Latest from "./components/Latest"
-import Layout from "./components/Layout"
+import PostHeader from "./../components/PostHeader"
+import PostContent from "./../components/PostContent"
+import Tag from "./../components/Tag"
+import Latest from "./../components/Latest"
+import Layout from "./../components/Layout"
 
 
 
